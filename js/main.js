@@ -45,7 +45,7 @@ function calculateWealth() {
   const wealth = data.reduce((acc, user) => (acc += user.money), 0);
 
   const wealthE1 = document.createElement("div");
-  wealthE1.innerHTML = `<h3>Total Wealth: <strong>${formatMoney(
+  wealthE1.innerHTML = `<h3>Inversiones Totales: <strong>${formatMoney(
     wealth
   )}</strong></h3>`;
   main.appendChild(wealthE1);
